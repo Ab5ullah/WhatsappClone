@@ -53,7 +53,7 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                   minimumSize: Size(screenWidth / 1.2, 40),
                 ),
                 onPressed: () {
-                  Navigator.pushReplacement(
+                  Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => Onboardingscreen2(),
