@@ -50,6 +50,20 @@ class _Onboardingscreen2State extends State<Onboardingscreen2> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Text.rich(
+                  textAlign: TextAlign.center,
+                  TextSpan(
+                      text: "WhatsApp will need to verify your account. ",
+                      children: [
+                        TextSpan(
+                          text: "What's my number?",
+                          style: TextStyle(
+                            color: Colors.blue,
+                          ),
+                        ),
+                      ])),
+              const SizedBox(height: 10),
+
               // Country Name Selector
               GestureDetector(
                 onTap: _selectCountry,
@@ -120,7 +134,7 @@ class _Onboardingscreen2State extends State<Onboardingscreen2> {
                 style: TextStyle(fontSize: 12, color: Colors.grey),
               ),
               SizedBox(
-                height: screenHight * .1,
+                height: 20,
               ),
               ElevatedButton(
                   onPressed: () {
